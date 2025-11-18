@@ -1,52 +1,47 @@
-# TODO List for Jacameno: Adult Life Prototype
+# Jacameno Adult Life Unity Project Setup TODO
 
-## 1. Project Structure Setup
-- [x] Create Assets/Scripts subfolders: Player, World, UI, Systems, NPCs, MiniGames, Data
+## Overview
+Set up the Unity project with the specified folder structure and implement the provided C# scripts for the Jacameno Adult Life game.
 
-## 2. Player Scripts
-- [x] PlayerController.cs (third-person movement, sprint, jump)
-- [x] PlayerStats.cs (hunger, energy, money, stress, experience)
-- [x] PlayerSkills.cs (cooking, work, fitness, charm leveling)
-- [x] PlayerInteraction.cs (raycast/proximity triggers)
+## Steps to Complete
 
-## 3. World Scripts
-- [ ] DayNightCycle.cs (lighting, skybox, time passage)
-- [ ] TimeManager.cs (game time, even during mini-games)
+### 1. Create/Update C# Scripts with Provided Code
+- [x] Assets/Scripts/Player/CameraFollow.cs
+- [x] Assets/Scripts/Systems/NeedsManager.cs
+- [x] Assets/Scripts/Systems/BillsManager.cs
+- [x] Assets/Scripts/Gameplay/Quest.cs
+- [x] Assets/Scripts/Utils/SerializableDictionary.cs
+- [x] Assets/Scripts/Jobs/WarehouseJob.cs
+- [ ] Assets/Scripts/Player/PlayerController.cs
+- [ ] Assets/Scripts/Systems/TimeSystem.cs
+- [ ] Assets/Scripts/Systems/MoneyManager.cs
+- [ ] Assets/Scripts/Systems/SaveManager.cs
+- [ ] Assets/Scripts/Systems/UIManager.cs
+- [ ] Assets/Scripts/Systems/JobManager.cs
+- [ ] Assets/Scripts/Gameplay/QuestManager.cs
+- [ ] Assets/Scripts/Gameplay/DialogueManager.cs
+- [ ] Assets/Scripts/Gameplay/NPCController.cs
+- [ ] Assets/Scripts/Gameplay/Inventory.cs
+- [ ] Assets/Scripts/Gameplay/Item.cs
+- [ ] Assets/Scripts/Gameplay/Shop.cs
+- [ ] Assets/Scripts/Jobs/CashierMinigame.cs
+- [ ] Assets/Scripts/Utils/Helpers.cs
 
-## 4. UI Scripts
-- [x] HUDManager.cs (clock, hunger, energy, money)
-- [x] InventoryUI.cs (inventory menu)
-- [x] PhoneUI.cs (quests, apps, messages)
-- [x] ShopUI.cs (shops interface)
-- [x] JobResultsUI.cs (job results screen)
+### 2. Create Stub Scripts
+- [x] Assets/Scripts/Jobs/DeliveryJob.cs (stub with comment)
+- [ ] Assets/Scripts/Systems/AudioManager.cs (basic MonoBehaviour)
+- [ ] Assets/Scripts/Systems/RateLimiter.cs (basic class)
+- [ ] Assets/Scripts/Gameplay/Dialogue.cs (basic class)
+- [ ] Assets/Scripts/Jobs/DeliveryJob.cs (stub with comment)
 
-## 5. Systems Scripts
-- [x] NeedsManager.cs (stat decay)
-- [x] MoneyManager.cs
-- [x] BillsManager.cs (rent, utilities)
-- [x] QuestManager.cs (daily/weekly tasks)
-- [x] DialogueManager.cs
-- [x] SaveManager.cs (JSON save/load)
+### 3. Update Documentation
+- [ ] Update Assets/README.md with the provided content
 
-## 6. NPC Scripts
-- [x] NPCController.cs (behavior states, navmesh)
-- [x] NPCDialogue.cs (dialogue trigger)
+### 4. Verification
+- [ ] Verify folder structure matches the recommended layout
+- [ ] Check for any compilation errors (in Unity)
 
-## 7. Mini-Games Scripts
-- [x] CashierMiniGame.cs (scanning items)
-- [x] DeliveryMiniGame.cs (drive to markers)
-- [x] WarehouseMiniGame.cs (timed sorting)
-
-## 8. Data Classes
-- [x] Item.cs, Quest.cs, NPCData.cs, etc.
-
-## 9. Scene and Prefab Setup
-- [x] Document scene structure
-- [x] List prefabs
-- [x] UI hierarchy
-- [x] Example JSON save file
-
-## 10. Integration and Testing
-- [x] Assign scripts to objects
-- [x] Test compilation
-- [x] Verify game loop
+## Notes
+- All scripts are placed under Assets/Scripts/ with appropriate subfolders.
+- Stubs are basic implementations with comments for future expansion.
+- Non-script assets (prefabs, scenes, etc.) are not created here as they are not code-based.

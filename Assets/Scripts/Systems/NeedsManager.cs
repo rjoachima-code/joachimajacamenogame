@@ -1,79 +1,58 @@
 using UnityEngine;
-using UnityEngine.Events;
+using System;
 
 public class NeedsManager : MonoBehaviour
 {
     public static NeedsManager Instance { get; private set; }
 
-    [Header("Need Settings")]
-    [SerializeField] private float hungerDecayRate = 1f; // Per minute
-    [SerializeField] private float energyDecayRate = 0.5f; // Per minute
-    [SerializeField] private float stressIncreaseRate = 0.2f; // Per minute
+    [Header("Needs (0-100)")]
+    [Range(0,100)] public float hunger = 80f;
+    [Range(0,100)] public float energy = 80f;
+    [Range(0,100)] public float hygiene = 80f;
+    [Range(0,100)] public float stress = 10f;
 
-    [Header("Events")]
-    public UnityEvent<float> onHungerChanged;
-    public UnityEvent<float> onEnergyChanged;
-    public UnityEvent<float> onStressChanged;
+    [Header("Decay Rates (per in-game minute)")]
+    public float hungerDecayPerMinute = 0.08f;
+    public float energyDecayPerMinute = 0.05f;
+    public float hygieneDecayPerMinute = 0.01f;
+    public float stressIncreasePerMinute = 0.02f;
 
-    private float currentHunger = 100f;
-    private float currentEnergy = 100f;
-    private float currentStress = 0f;
+    public event Action OnNeedsChanged;
 
-    private void Awake()
+    void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        Instance = this;
+        TimeSystem.Instance.OnTimeTick += OnTimeTick;
+        TimeSystem.Instance.OnNewDay += OnNewDay;
     }
 
-    private void Update()
+    void OnTimeTick(int hour, int minute)
     {
-        // Decay needs over time
-        currentHunger = Mathf.Max(0f, currentHunger - hungerDecayRate * Time.deltaTime);
-        currentEnergy = Mathf.Max(0f, currentEnergy - energyDecayRate * Time.deltaTime);
-        currentStress = Mathf.Min(100f, currentStress + stressIncreaseRate * Time.deltaTime);
-
-        onHungerChanged?.Invoke(currentHunger);
-        onEnergyChanged?.Invoke(currentEnergy);
-        onStressChanged?.Invoke(currentStress);
+        // every minute decay/increase accordingly
+        hunger = Mathf.Clamp01(hunger/100f - hungerDecayPerMinute) * 100f;
+        energy = Mathf.Clamp01(energy/100f - energyDecayPerMinute) * 100f;
+        hygiene = Mathf.Clamp01(hygiene/100f - hygieneDecayPerMinute) * 100f;
+        stress = Mathf.Clamp01(stress/100f + stressIncreasePerMinute) * 100f;
+        OnNeedsChanged?.Invoke();
     }
 
-    public void EatFood(float hungerRestore)
+    void OnNewDay()
     {
-        currentHunger = Mathf.Min(100f, currentHunger + hungerRestore);
-        onHungerChanged?.Invoke(currentHunger);
+        // small daily adjustments
+        energy = Mathf.Clamp(energy + 10f, 0f, 100f);
+        OnNeedsChanged?.Invoke();
     }
 
-    public void Sleep(float energyRestore)
-    {
-        currentEnergy = Mathf.Min(100f, currentEnergy + energyRestore);
-        onEnergyChanged?.Invoke(currentEnergy);
-    }
+    public void ModifyHunger(float delta) { hunger = Mathf.Clamp(hunger + delta, 0, 100); OnNeedsChanged?.Invoke(); }
+    public void ModifyEnergy(float delta) { energy = Mathf.Clamp(energy + delta, 0, 100); OnNeedsChanged?.Invoke(); }
+    public void ModifyHygiene(float delta) { hygiene = Mathf.Clamp(hygiene + delta, 0, 100); OnNeedsChanged?.Invoke(); }
+    public void ModifyStress(float delta) { stress = Mathf.Clamp(stress + delta, 0, 100); OnNeedsChanged?.Invoke(); }
 
-    public void ReduceStress(float stressReduction)
-    {
-        currentStress = Mathf.Max(0f, currentStress - stressReduction);
-        onStressChanged?.Invoke(currentStress);
-    }
+    public NeedsSnapshot Snapshot() => new NeedsSnapshot{ hunger = hunger, energy = energy, hygiene = hygiene, stress = stress };
+}
 
-    public float GetHunger()
-    {
-        return currentHunger;
-    }
-
-    public float GetEnergy()
-    {
-        return currentEnergy;
-    }
-
-    public float GetStress()
-    {
-        return currentStress;
-    }
+[Serializable]
+public struct NeedsSnapshot
+{
+    public float hunger; public float energy; public float hygiene; public float stress;
 }
