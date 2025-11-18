@@ -6,17 +6,19 @@ Set up the Unity project with the specified folder structure and implement the p
 ## Steps to Complete
 
 ### 1. Create/Update C# Scripts with Provided Code
+- [x] Assets/Scripts/Player/CameraFollow.cs
+- [x] Assets/Scripts/Systems/NeedsManager.cs
+- [x] Assets/Scripts/Systems/BillsManager.cs
+- [x] Assets/Scripts/Gameplay/Quest.cs
+- [x] Assets/Scripts/Utils/SerializableDictionary.cs
+- [x] Assets/Scripts/Jobs/WarehouseJob.cs
 - [ ] Assets/Scripts/Player/PlayerController.cs
-- [ ] Assets/Scripts/Player/CameraFollow.cs
 - [ ] Assets/Scripts/Systems/TimeSystem.cs
-- [ ] Assets/Scripts/Systems/NeedsManager.cs
 - [ ] Assets/Scripts/Systems/MoneyManager.cs
-- [ ] Assets/Scripts/Systems/BillsManager.cs
 - [ ] Assets/Scripts/Systems/SaveManager.cs
 - [ ] Assets/Scripts/Systems/UIManager.cs
 - [ ] Assets/Scripts/Systems/JobManager.cs
 - [ ] Assets/Scripts/Gameplay/QuestManager.cs
-- [ ] Assets/Scripts/Gameplay/Quest.cs
 - [ ] Assets/Scripts/Gameplay/DialogueManager.cs
 - [ ] Assets/Scripts/Gameplay/NPCController.cs
 - [ ] Assets/Scripts/Gameplay/Inventory.cs
@@ -26,12 +28,11 @@ Set up the Unity project with the specified folder structure and implement the p
 - [ ] Assets/Scripts/Utils/Helpers.cs
 
 ### 2. Create Stub Scripts
+- [x] Assets/Scripts/Jobs/DeliveryJob.cs (stub with comment)
 - [ ] Assets/Scripts/Systems/AudioManager.cs (basic MonoBehaviour)
 - [ ] Assets/Scripts/Systems/RateLimiter.cs (basic class)
 - [ ] Assets/Scripts/Gameplay/Dialogue.cs (basic class)
-- [ ] Assets/Scripts/Utils/SerializableDictionary.cs (basic generic class)
 - [ ] Assets/Scripts/Jobs/DeliveryJob.cs (stub with comment)
-- [ ] Assets/Scripts/Jobs/WarehouseJob.cs (stub with comment)
 
 ### 3. Update Documentation
 - [ ] Update Assets/README.md with the provided content
