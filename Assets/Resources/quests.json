@@ -1,0 +1,36 @@
+{
+  "quests": [
+    {
+      "id": "q_pay_rent",
+      "title": "Pay Rent",
+      "description": "Pay rent before due day",
+      "completed": false,
+      "rewardMoney": 50,
+      "rewardXP": 0
+    },
+    {
+      "id": "daily_eat",
+      "title": "Eat Breakfast",
+      "description": "Start your day with a meal",
+      "completed": false,
+      "rewardMoney": 10,
+      "rewardXP": 5
+    },
+    {
+      "id": "daily_work",
+      "title": "Go to Work",
+      "description": "Earn some money",
+      "completed": false,
+      "rewardMoney": 50,
+      "rewardXP": 10
+    },
+    {
+      "id": "weekly_pay_bills",
+      "title": "Pay Bills",
+      "description": "Pay rent and utilities",
+      "completed": false,
+      "rewardMoney": 0,
+      "rewardXP": 20
+    }
+  ]
+}

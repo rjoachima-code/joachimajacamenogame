@@ -81,7 +81,3 @@ public class PlayerController : MonoBehaviour
     }
 }
 
-public interface IInteractable
-{
-    void Interact();
-}

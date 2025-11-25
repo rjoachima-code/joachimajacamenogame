@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class PlayerStats : MonoBehaviour
+public class PlayerStats : MonoBehaviour, ISaveable
 {
     public static PlayerStats Instance { get; private set; }
 
@@ -41,6 +41,14 @@ public class PlayerStats : MonoBehaviour
         currentStress = 0f;
         currentMoney = 100;
         currentExperience = 0;
+
+        SaveManager.Instance.RegisterSaveable(this);
+    }
+
+    void OnDestroy()
+    {
+        if (SaveManager.Instance != null)
+            SaveManager.Instance.UnregisterSaveable(this);
     }
 
     public void ModifyHunger(float amount)
@@ -78,4 +86,43 @@ public class PlayerStats : MonoBehaviour
     public float GetStress() => currentStress;
     public int GetMoney() => currentMoney;
     public int GetExperience() => currentExperience;
+
+    [System.Serializable]
+    private struct PlayerStatsData
+    {
+        public float currentHunger;
+        public float currentEnergy;
+        public float currentStress;
+        public int currentMoney;
+        public int currentExperience;
+    }
+
+    public string SaveData()
+    {
+        var data = new PlayerStatsData
+        {
+            currentHunger = this.currentHunger,
+            currentEnergy = this.currentEnergy,
+            currentStress = this.currentStress,
+            currentMoney = this.currentMoney,
+            currentExperience = this.currentExperience
+        };
+        return JsonUtility.ToJson(data);
+    }
+
+    public void LoadData(string state)
+    {
+        var data = JsonUtility.FromJson<PlayerStatsData>(state);
+        this.currentHunger = data.currentHunger;
+        this.currentEnergy = data.currentEnergy;
+        this.currentStress = data.currentStress;
+        this.currentMoney = data.currentMoney;
+        this.currentExperience = data.currentExperience;
+
+        onHungerChanged?.Invoke(currentHunger);
+        onEnergyChanged?.Invoke(currentEnergy);
+        onStressChanged?.Invoke(currentStress);
+        onMoneyChanged?.Invoke(currentMoney);
+        onExperienceChanged?.Invoke(currentExperience);
+    }
 }

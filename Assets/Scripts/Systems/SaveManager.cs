@@ -1,31 +1,14 @@
 using UnityEngine;
 using System.IO;
-using System;
 using System.Collections.Generic;
-
-[Serializable]
-public class GameSave
-{
-    public int hour;
-    public int minute;
-    public float moneyBalance;
-    public List<Transaction> transactions;
-    public List<Bill> bills;
-    public NeedsSnapshot needs;
-    public List<QuestSave> quests;
-}
-
-[Serializable]
-public class QuestSave
-{
-    public string id;
-    public bool completed;
-}
+using System.Linq;
 
 public class SaveManager : MonoBehaviour
 {
     public static SaveManager Instance { get; private set; }
     string saveFile => Path.Combine(Application.persistentDataPath, "save.json");
+
+    private List<ISaveable> saveables = new List<ISaveable>();
 
     void Awake()
     {
@@ -33,18 +16,28 @@ public class SaveManager : MonoBehaviour
         Instance = this;
     }
 
+    public void RegisterSaveable(ISaveable saveable)
+    {
+        if (!saveables.Contains(saveable))
+        {
+            saveables.Add(saveable);
+        }
+    }
+
+    public void UnregisterSaveable(ISaveable saveable)
+    {
+        saveables.Remove(saveable);
+    }
+
     public void SaveGame()
     {
-        var g = new GameSave();
-        g.hour = TimeSystem.Instance.Hour;
-        g.minute = TimeSystem.Instance.Minute;
-        g.moneyBalance = MoneyManager.Instance.balance;
-        g.transactions = MoneyManager.Instance.transactions;
-        g.bills = BillsManager.Instance.bills;
-        g.needs = NeedsManager.Instance.Snapshot();
-        g.quests = QuestManager.Instance.GetQuestSaves();
+        var dataToSave = new Dictionary<string, string>();
+        foreach (var saveable in saveables)
+        {
+            dataToSave[saveable.GetType().ToString()] = saveable.SaveData();
+        }
 
-        string json = JsonUtility.ToJson(g, true);
+        string json = JsonUtility.ToJson(new SerializableDictionary<string, string>(dataToSave), true);
         File.WriteAllText(saveFile, json);
         Debug.Log($"Game saved to {saveFile}");
     }
@@ -53,22 +46,23 @@ public class SaveManager : MonoBehaviour
     {
         if (!File.Exists(saveFile)) { Debug.Log("No save file"); return; }
         string json = File.ReadAllText(saveFile);
-        GameSave g = JsonUtility.FromJson<GameSave>(json);
+        var loadedData = JsonUtility.FromJson<SerializableDictionary<string, string>>(json);
+        
+        if (loadedData == null) {
+            Debug.LogError("Failed to deserialize save data.");
+            return;
+        }
 
-        // restore
-        TimeSystem.Instance.Hour = g.hour;
-        TimeSystem.Instance.MinutesSet(g.minute); // helper method you'll add below
-        MoneyManager.Instance.balance = g.moneyBalance;
-        MoneyManager.Instance.transactions = g.transactions ?? new List<Transaction>();
-        BillsManager.Instance.bills = g.bills ?? new List<Bill>();
-        // restore needs
-        var n = g.needs;
-        NeedsManager.Instance.hunger = n.hunger;
-        NeedsManager.Instance.energy = n.energy;
-        NeedsManager.Instance.hygiene = n.hygiene;
-        NeedsManager.Instance.stress = n.stress;
-        // restore quests
-        QuestManager.Instance.ApplyQuestSaves(g.quests);
+        var savedData = loadedData.ToDictionary();
+
+        foreach (var saveable in saveables)
+        {
+            string key = saveable.GetType().ToString();
+            if (savedData.ContainsKey(key) && !string.IsNullOrEmpty(savedData[key]))
+            {
+                saveable.LoadData(savedData[key]);
+            }
+        }
         Debug.Log("Game loaded");
     }
 }

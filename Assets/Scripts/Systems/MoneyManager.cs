@@ -2,7 +2,7 @@ using UnityEngine;
 using System;
 using System.Collections.Generic;
 
-public class MoneyManager : MonoBehaviour
+public class MoneyManager : MonoBehaviour, ISaveable
 {
     public static MoneyManager Instance { get; private set; }
 
@@ -15,12 +15,19 @@ public class MoneyManager : MonoBehaviour
     {
         if (Instance != null && Instance != this) Destroy(this);
         Instance = this;
+        SaveManager.Instance.RegisterSaveable(this);
+    }
+
+    void OnDestroy()
+    {
+        if (SaveManager.Instance != null)
+            SaveManager.Instance.UnregisterSaveable(this);
     }
 
     public void AddMoney(float amount, string description = "Income")
     {
         balance += amount;
-        transactions.Add(new Transaction{ amount = amount, description = description, date = System.DateTime.Now.ToString() });
+        transactions.Add(new Transaction { amount = amount, description = description, date = TimeSystem.Instance.GetDateString() });
         OnBalanceChanged?.Invoke();
     }
 
@@ -28,7 +35,7 @@ public class MoneyManager : MonoBehaviour
     {
         if (balance - amount < -10000f) return false; // hard credit limit
         balance -= amount;
-        transactions.Add(new Transaction{ amount = -amount, description = description, date = System.DateTime.Now.ToString() });
+        transactions.Add(new Transaction { amount = -amount, description = description, date = TimeSystem.Instance.GetDateString() });
         OnBalanceChanged?.Invoke();
         return true;
     }
@@ -39,6 +46,31 @@ public class MoneyManager : MonoBehaviour
         {
             bill.MarkPaidForCurrentCycle();
         }
+    }
+
+    [System.Serializable]
+    private struct MoneyData
+    {
+        public float balance;
+        public List<Transaction> transactions;
+    }
+
+    public string SaveData()
+    {
+        var data = new MoneyData
+        {
+            balance = balance,
+            transactions = transactions
+        };
+        return JsonUtility.ToJson(data);
+    }
+
+    public void LoadData(string state)
+    {
+        var data = JsonUtility.FromJson<MoneyData>(state);
+        balance = data.balance;
+        transactions = data.transactions ?? new List<Transaction>();
+        OnBalanceChanged?.Invoke();
     }
 }
 
@@ -61,22 +93,31 @@ public class Bill
     public bool autoPay = true;
 
     // internal tracking
-    public int lastPaidYear = -1;
-    public int lastPaidMonth = -1;
+    public int lastPaidDay = -1;
 
     public void MarkPaidForCurrentCycle()
     {
-        var now = System.DateTime.Now;
-        lastPaidYear = now.Year;
-        lastPaidMonth = now.Month;
+        lastPaidDay = TimeSystem.Instance.Day;
     }
 
     public bool IsDueThisMonth()
     {
-        // simplistic: if lastPaidMonth != current month and dueDay <= today
-        var now = System.DateTime.Now;
-        if (lastPaidYear == now.Year && lastPaidMonth == now.Month) return false;
-        return now.Day >= dueDay;
+        if (lastPaidDay == TimeSystem.Instance.Day) return false; // Already paid today
+
+        switch (frequency)
+        {
+            case BillingFrequency.Daily:
+                return lastPaidDay < TimeSystem.Instance.Day;
+            case BillingFrequency.Weekly:
+                // Paid within the last 7 days?
+                return (TimeSystem.Instance.Day - lastPaidDay) >= 7;
+            case BillingFrequency.Monthly:
+                // Assuming a month is 30 days for simplicity for now.
+                // A more robust solution would be to use the TimeSystem to track months.
+                return TimeSystem.Instance.Day >= dueDay && (TimeSystem.Instance.Day - lastPaidDay) >= 30;
+            default:
+                return false;
+        }
     }
 }
 
