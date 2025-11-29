@@ -1,0 +1,52 @@
+{
+  "districtName": "Xero",
+  "districtType": "Xero",
+  "description": "The industrial and manufacturing district. Factories, warehouses, and blue-collar work. Honest labor and tight-knit communities.",
+  "theme": "Industrial & Manufacturing",
+  "color": {
+    "primary": "#8B4513",
+    "secondary": "#A0522D",
+    "accent": "#D2691E"
+  },
+  "economy": {
+    "baseRentCost": 400,
+    "costOfLivingMultiplier": 0.7,
+    "averageWage": 60,
+    "jobAvailability": "High"
+  },
+  "housing": {
+    "maxSlots": 30,
+    "styles": ["Worker Flat", "Row House", "Industrial Loft", "Converted Warehouse"],
+    "averageRent": 400
+  },
+  "businesses": {
+    "types": ["Auto Repair Shop", "Hardware Store", "Diner", "Laundromat", "Pawn Shop"],
+    "startupCostMultiplier": 0.6
+  },
+  "npcs": {
+    "types": ["FactoryWorker", "Mechanic", "WarehouseManager", "UnionRep", "Truck Driver", "Welder"],
+    "maxCount": 70,
+    "density": "High"
+  },
+  "weather": {
+    "rainChance": 0.4,
+    "fogChance": 0.25,
+    "sunnyBias": 0.2
+  },
+  "trainStation": {
+    "name": "Xero Industrial Station",
+    "position": { "x": -70, "y": 0, "z": -70 },
+    "lineColor": "#A0522D"
+  },
+  "landmarks": [
+    "Old Factory",
+    "Shipping Yard",
+    "Union Hall",
+    "Corner Diner"
+  ],
+  "ambience": {
+    "daytimeAtmosphere": "Factory sounds, trucks passing by",
+    "nighttimeAtmosphere": "Quiet streets, occasional train horns",
+    "soundscape": ["Machinery humming", "Truck engines", "Metal clanging", "Train whistles"]
+  }
+}

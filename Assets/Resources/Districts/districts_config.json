@@ -1,0 +1,180 @@
+{
+  "districts": [
+    {
+      "districtName": "Fame",
+      "districtType": "Fame",
+      "description": "The entertainment and celebrity district. Home to studios, theaters, and glamorous nightlife.",
+      "districtColor": "#FFD700",
+      "trainLineColor": "#FFD700",
+      "baseRentCost": 1500,
+      "maxHousingSlots": 8,
+      "costOfLivingMultiplier": 2.0,
+      "availableBusinessTypes": ["Entertainment", "Restaurant", "Fashion", "Media"],
+      "npcTypes": ["Celebrity", "Paparazzi", "TalentAgent", "Entertainer", "Shopkeeper"],
+      "maxNPCCount": 60,
+      "rainChance": 0.2,
+      "fogChance": 0.05,
+      "trainStationName": "Fame Central Station",
+      "trainStationPosition": { "x": 100, "y": 0, "z": 0 }
+    },
+    {
+      "districtName": "Remi",
+      "districtType": "Remi",
+      "description": "The residential and family-oriented district. Quiet neighborhoods with parks and schools.",
+      "districtColor": "#90EE90",
+      "trainLineColor": "#32CD32",
+      "baseRentCost": 800,
+      "maxHousingSlots": 20,
+      "costOfLivingMultiplier": 1.0,
+      "availableBusinessTypes": ["Grocery", "Bakery", "Daycare", "Pet Store"],
+      "npcTypes": ["FamilyPerson", "Teacher", "ParkRanger", "NeighborhoodWatch", "Shopkeeper"],
+      "maxNPCCount": 80,
+      "rainChance": 0.35,
+      "fogChance": 0.1,
+      "trainStationName": "Remi Gardens Station",
+      "trainStationPosition": { "x": 0, "y": 0, "z": 100 }
+    },
+    {
+      "districtName": "Kiyo",
+      "districtType": "Kiyo",
+      "description": "The technology and innovation district. Sleek architecture and cutting-edge startups.",
+      "districtColor": "#00BFFF",
+      "trainLineColor": "#1E90FF",
+      "baseRentCost": 1200,
+      "maxHousingSlots": 12,
+      "costOfLivingMultiplier": 1.5,
+      "availableBusinessTypes": ["Tech Startup", "Coffee Shop", "Electronics", "Co-working Space"],
+      "npcTypes": ["TechEngineer", "StartupFounder", "Researcher", "ITSupport", "Shopkeeper"],
+      "maxNPCCount": 50,
+      "rainChance": 0.25,
+      "fogChance": 0.08,
+      "trainStationName": "Kiyo Tech Hub Station",
+      "trainStationPosition": { "x": -100, "y": 0, "z": 0 }
+    },
+    {
+      "districtName": "Zenin",
+      "districtType": "Zenin",
+      "description": "The business and financial district. Towering skyscrapers and corporate headquarters.",
+      "districtColor": "#C0C0C0",
+      "trainLineColor": "#808080",
+      "baseRentCost": 2000,
+      "maxHousingSlots": 6,
+      "costOfLivingMultiplier": 2.5,
+      "availableBusinessTypes": ["Consulting", "Financial Services", "Law Firm", "Luxury Retail"],
+      "npcTypes": ["BusinessExecutive", "Banker", "Lawyer", "StockBroker", "Shopkeeper"],
+      "maxNPCCount": 40,
+      "rainChance": 0.3,
+      "fogChance": 0.15,
+      "trainStationName": "Zenin Financial Station",
+      "trainStationPosition": { "x": 0, "y": 0, "z": -100 }
+    },
+    {
+      "districtName": "Xero",
+      "districtType": "Xero",
+      "description": "The industrial and manufacturing district. Factories, warehouses, and blue-collar work.",
+      "districtColor": "#8B4513",
+      "trainLineColor": "#A0522D",
+      "baseRentCost": 400,
+      "maxHousingSlots": 30,
+      "costOfLivingMultiplier": 0.7,
+      "availableBusinessTypes": ["Auto Repair", "Hardware Store", "Diner", "Laundromat"],
+      "npcTypes": ["FactoryWorker", "Mechanic", "WarehouseManager", "UnionRep", "Shopkeeper"],
+      "maxNPCCount": 70,
+      "rainChance": 0.4,
+      "fogChance": 0.25,
+      "trainStationName": "Xero Industrial Station",
+      "trainStationPosition": { "x": -70, "y": 0, "z": -70 }
+    }
+  ],
+  "trainSystem": {
+    "centralHubName": "The Grid",
+    "centralHubPosition": { "x": 0, "y": 0, "z": 0 },
+    "baseTravelTimeMinutes": 5,
+    "lineColors": {
+      "Fame": "#FFD700",
+      "Remi": "#32CD32",
+      "Kiyo": "#1E90FF",
+      "Zenin": "#808080",
+      "Xero": "#A0522D"
+    }
+  },
+  "starterBusinesses": [
+    {
+      "businessId": "food_cart",
+      "businessName": "Food Cart",
+      "category": "Food",
+      "startupCost": 500,
+      "dailyOperatingCost": 50,
+      "potentialDailyRevenue": 150,
+      "allowedDistricts": ["Fame", "Remi", "Kiyo", "Zenin", "Xero"],
+      "requiredLevel": 1
+    },
+    {
+      "businessId": "vending_machine",
+      "businessName": "Vending Machine",
+      "category": "Retail",
+      "startupCost": 300,
+      "dailyOperatingCost": 20,
+      "potentialDailyRevenue": 80,
+      "allowedDistricts": ["Fame", "Remi", "Kiyo", "Zenin", "Xero"],
+      "requiredLevel": 1
+    },
+    {
+      "businessId": "freelance_tech",
+      "businessName": "Freelance Tech Support",
+      "category": "Service",
+      "startupCost": 100,
+      "dailyOperatingCost": 10,
+      "potentialDailyRevenue": 200,
+      "allowedDistricts": ["Kiyo", "Zenin"],
+      "requiredLevel": 1
+    }
+  ],
+  "housingOptions": [
+    {
+      "homeId": "fame_studio",
+      "homeName": "Fame District Studio",
+      "district": "Fame",
+      "rentCost": 1500,
+      "depositCost": 3000,
+      "roomCount": 1,
+      "qualityRating": 4.0
+    },
+    {
+      "homeId": "remi_apartment",
+      "homeName": "Remi Family Apartment",
+      "district": "Remi",
+      "rentCost": 800,
+      "depositCost": 1600,
+      "roomCount": 2,
+      "qualityRating": 3.5
+    },
+    {
+      "homeId": "kiyo_loft",
+      "homeName": "Kiyo Tech Loft",
+      "district": "Kiyo",
+      "rentCost": 1200,
+      "depositCost": 2400,
+      "roomCount": 1,
+      "qualityRating": 4.5
+    },
+    {
+      "homeId": "zenin_penthouse",
+      "homeName": "Zenin Executive Penthouse",
+      "district": "Zenin",
+      "rentCost": 2000,
+      "depositCost": 4000,
+      "roomCount": 3,
+      "qualityRating": 5.0
+    },
+    {
+      "homeId": "xero_flat",
+      "homeName": "Xero Worker Flat",
+      "district": "Xero",
+      "rentCost": 400,
+      "depositCost": 800,
+      "roomCount": 1,
+      "qualityRating": 2.0
+    }
+  ]
+}

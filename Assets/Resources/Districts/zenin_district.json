@@ -1,0 +1,52 @@
+{
+  "districtName": "Zenin",
+  "districtType": "Zenin",
+  "description": "The business and financial district. Towering skyscrapers, corporate headquarters, and power suits. Money talks loudest here.",
+  "theme": "Business & Finance",
+  "color": {
+    "primary": "#C0C0C0",
+    "secondary": "#808080",
+    "accent": "#4682B4"
+  },
+  "economy": {
+    "baseRentCost": 2000,
+    "costOfLivingMultiplier": 2.5,
+    "averageWage": 300,
+    "jobAvailability": "Medium"
+  },
+  "housing": {
+    "maxSlots": 6,
+    "styles": ["Executive Suite", "Luxury Penthouse", "Corporate Housing"],
+    "averageRent": 2000
+  },
+  "businesses": {
+    "types": ["Consulting Firm", "Financial Services", "Law Firm", "Luxury Retail", "Fine Dining"],
+    "startupCostMultiplier": 2.0
+  },
+  "npcs": {
+    "types": ["BusinessExecutive", "Banker", "Lawyer", "StockBroker", "Personal Assistant", "Chauffeur"],
+    "maxCount": 40,
+    "density": "Medium"
+  },
+  "weather": {
+    "rainChance": 0.3,
+    "fogChance": 0.15,
+    "sunnyBias": 0.35
+  },
+  "trainStation": {
+    "name": "Zenin Financial Station",
+    "position": { "x": 0, "y": 0, "z": -100 },
+    "lineColor": "#808080"
+  },
+  "landmarks": [
+    "Financial Tower",
+    "Stock Exchange",
+    "Corporate Plaza",
+    "Executive Club"
+  ],
+  "ambience": {
+    "daytimeAtmosphere": "Busy professionals, constant meetings",
+    "nighttimeAtmosphere": "After-work drinks, networking events",
+    "soundscape": ["City traffic", "Phone calls", "Elevator dings", "High heels on marble"]
+  }
+}
