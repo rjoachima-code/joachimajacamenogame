@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -96,7 +97,7 @@ public class TrainSystem : MonoBehaviour
         return to.travelTimeMinutes > 0 ? to.travelTimeMinutes : baseTravelTimeMinutes;
     }
 
-    private System.Collections.IEnumerator TravelCoroutine(TrainStationData destination, float travelTimeMinutes)
+    private IEnumerator TravelCoroutine(TrainStationData destination, float travelTimeMinutes)
     {
         // Advance game time
         if (TimeSystem.Instance != null)

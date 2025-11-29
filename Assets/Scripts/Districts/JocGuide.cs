@@ -12,6 +12,7 @@ public class JocGuide : MonoBehaviour
     [Header("Guide Settings")]
     [SerializeField] private string guideName = "Joc";
     [SerializeField] private bool isActive = true;
+    [SerializeField] private DistrictType defaultDistrict = DistrictType.Fame;
 
     [Header("Tutorial State")]
     [SerializeField] private bool hasCompletedIntro = false;
@@ -171,7 +172,7 @@ public class JocGuide : MonoBehaviour
         lastHintTime = Time.time;
         OnNavigationHint?.Invoke(targetDistrict);
 
-        var currentDistrict = DistrictManager.Instance?.GetCurrentDistrict() ?? DistrictType.Fame;
+        var currentDistrict = DistrictManager.Instance?.GetCurrentDistrict() ?? defaultDistrict;
         if (currentDistrict == targetDistrict)
         {
             ShowMessage($"You're already in the {targetDistrict} district!");

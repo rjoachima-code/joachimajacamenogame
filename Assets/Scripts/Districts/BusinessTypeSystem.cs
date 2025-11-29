@@ -150,4 +150,26 @@ public class BusinessTypeSystem : MonoBehaviour
         if (playerLevel < businessType.requiredLevel) return false;
         return true;
     }
+
+    /// <summary>
+    /// Checks if a player can start a business in a specific district.
+    /// </summary>
+    public bool CanStartBusinessInDistrict(BusinessTypeData businessType, int playerMoney, int playerLevel, DistrictType district)
+    {
+        if (!CanStartBusiness(businessType, playerMoney, playerLevel)) return false;
+
+        // If no district restrictions, allow anywhere
+        if (businessType.allowedDistricts == null || businessType.allowedDistricts.Length == 0)
+        {
+            return true;
+        }
+
+        // Check if district is allowed
+        foreach (var allowedDistrict in businessType.allowedDistricts)
+        {
+            if (allowedDistrict == district) return true;
+        }
+
+        return false;
+    }
 }

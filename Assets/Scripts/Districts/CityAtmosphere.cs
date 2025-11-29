@@ -29,6 +29,9 @@ public class CityAtmosphere : MonoBehaviour
     [Header("District Modifiers")]
     [SerializeField] private float industrialPollutionFogMultiplier = 1.5f;
 
+    [Header("Skybox Settings")]
+    [SerializeField] private string skyboxRotationPropertyName = "_Rotation";
+
     public event Action<bool> OnDayNightChanged; // true = day, false = night
     public event Action<float> OnTimeOfDayChanged;
 
@@ -189,7 +192,7 @@ public class CityAtmosphere : MonoBehaviour
         if (skyboxMaterial == null) return;
 
         // Rotate skybox
-        skyboxMaterial.SetFloat("_Rotation", timeOfDay * 360f);
+        skyboxMaterial.SetFloat(skyboxRotationPropertyName, timeOfDay * 360f);
     }
 
     private void CheckDayNightTransition(int hour)

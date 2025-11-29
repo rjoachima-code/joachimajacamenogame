@@ -158,7 +158,6 @@ public class WeatherSystem : MonoBehaviour
         switch (currentWeather)
         {
             case WeatherType.Sunny:
-            case WeatherType.Clear:
                 SetLightIntensity(sunnyIntensity);
                 break;
 
@@ -219,7 +218,6 @@ public class WeatherSystem : MonoBehaviour
             case WeatherType.Rain: return "Rainy";
             case WeatherType.HeavyRain: return "Heavy Rain";
             case WeatherType.Fog: return "Foggy";
-            case WeatherType.Clear: return "Clear";
             default: return "Unknown";
         }
     }
