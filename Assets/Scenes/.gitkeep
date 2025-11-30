@@ -4,44 +4,30 @@
 #
 # Available Scenes:
 # -----------------
-# - MainMenu.unity - Main menu scene template (requires Unity Editor setup)
+# - MainMenu.unity - Main menu scene with Start Game and Quit buttons
 # - MainGame.unity - Main gameplay scene (to be created in Unity Editor)
 #
-# MainMenu Scene Setup (Required Steps in Unity Editor):
-# -------------------------------------------------------
-# After opening this project in Unity, complete the following setup:
+# MainMenu Scene Contents:
+# ------------------------
+# The MainMenu.unity scene includes:
+# - Main Camera with AudioListener
+# - Managers (empty parent for GameManager, AudioManager, etc.)
+# - MainMenuCanvas with:
+#   - CanvasScaler (Scale with Screen Size, 1920x1080 reference)
+#   - GraphicRaycaster for UI input
+#   - TitleText displaying "Jacameno: Adult Life"
+#   - StartButton with green background and "Start Game" text
+#   - QuitButton with red background and "Quit" text
+# - EventSystem with StandaloneInputModule
 #
-# 1. Add GameManager Component:
-#    - Select the "Managers" GameObject in the hierarchy
-#    - Add Component -> Scripts -> GameManager
-#
-# 2. Configure MainMenuCanvas:
-#    - Add CanvasScaler component (UI Scale Mode: Scale With Screen Size)
-#    - Add GraphicRaycaster component
-#
-# 3. Setup TitleText:
-#    - Add TextMeshPro - Text component
-#    - Set Text to "Jacameno: Adult Life"
-#    - Configure font size and alignment
-#
-# 4. Setup StartButton:
-#    - Add Image component (for button background)
-#    - Add Button component
-#    - Add child object with TextMeshPro text "Start Game"
-#
-# 5. Setup QuitButton:
-#    - Add Image component (for button background)
-#    - Add Button component
-#    - Add child object with TextMeshPro text "Quit"
-#
-# 6. Create MainMenuManager GameObject:
-#    - Add MainMenuUI script component
-#    - Assign startGameButton and quitButton references
-#
-# 7. Configure EventSystem:
-#    - Add EventSystem component
-#    - Add StandaloneInputModule or Input System UI Input Module
-#
-# 8. Add Scene to Build Settings:
-#    - File > Build Settings
-#    - Add MainMenu scene (index 0) and MainGame scene (index 1)
+# Final Setup in Unity Editor:
+# ----------------------------
+# 1. Open the project in Unity 2022+
+# 2. Open the MainMenu scene
+# 3. Add GameManager script to the "Managers" GameObject
+# 4. Add AudioManager script to the "Managers" GameObject
+# 5. Add MainMenuUI script to a new "MainMenuManager" GameObject
+# 6. Assign startGameButton and quitButton references in MainMenuUI
+# 7. Add scene to Build Settings (File > Build Settings)
+#    - MainMenu as scene index 0
+#    - MainGame as scene index 1
