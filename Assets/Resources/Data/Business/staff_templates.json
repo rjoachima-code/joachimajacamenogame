@@ -1,0 +1,202 @@
+{
+  "staffTemplates": [
+    {
+      "templateId": "staff_cashier_entry",
+      "templateName": "Entry-Level Cashier",
+      "description": "New cashier with basic register skills, eager to learn",
+      "role": "Cashier",
+      "businessType": "Hypermarket",
+      "attributes": {
+        "minSpeed": 4,
+        "maxSpeed": 7,
+        "minAccuracy": 5,
+        "maxAccuracy": 8,
+        "minCharisma": 4,
+        "maxCharisma": 7,
+        "minMaintenance": 3,
+        "maxMaintenance": 5,
+        "minStamina": 5,
+        "maxStamina": 8,
+        "minLoyalty": 4,
+        "maxLoyalty": 7
+      },
+      "baseWage": 12.00,
+      "startingSkills": ["basic_training"],
+      "hiringRequirements": {
+        "businessTier": 1,
+        "interviewRequired": false,
+        "backgroundCheck": false
+      },
+      "taskCapabilities": [
+        "register_operation",
+        "bagging",
+        "basic_customer_service"
+      ],
+      "promotionPath": "staff_cashier_senior"
+    },
+    {
+      "templateId": "staff_stocker_general",
+      "templateName": "General Stocker",
+      "description": "Reliable stocker for general merchandise and grocery aisles",
+      "role": "Stocker",
+      "businessType": "Hypermarket",
+      "attributes": {
+        "minSpeed": 5,
+        "maxSpeed": 9,
+        "minAccuracy": 4,
+        "maxAccuracy": 7,
+        "minCharisma": 3,
+        "maxCharisma": 5,
+        "minMaintenance": 4,
+        "maxMaintenance": 7,
+        "minStamina": 6,
+        "maxStamina": 9,
+        "minLoyalty": 5,
+        "maxLoyalty": 8
+      },
+      "baseWage": 11.00,
+      "startingSkills": ["basic_training", "safety_training"],
+      "hiringRequirements": {
+        "businessTier": 1,
+        "interviewRequired": false,
+        "backgroundCheck": false
+      },
+      "taskCapabilities": [
+        "shelf_stocking",
+        "facing",
+        "price_tag_updates",
+        "basic_inventory",
+        "light_cleaning"
+      ],
+      "physicalRequirements": {
+        "liftingCapacity": "50lbs",
+        "standingHours": 8
+      },
+      "promotionPath": "staff_stocker_warehouse"
+    },
+    {
+      "templateId": "staff_manager_floor",
+      "templateName": "Floor Manager",
+      "description": "Experienced manager to supervise daily operations and staff",
+      "role": "FloorManager",
+      "businessType": "Hypermarket",
+      "attributes": {
+        "minSpeed": 5,
+        "maxSpeed": 8,
+        "minAccuracy": 6,
+        "maxAccuracy": 9,
+        "minCharisma": 7,
+        "maxCharisma": 10,
+        "minMaintenance": 4,
+        "maxMaintenance": 6,
+        "minStamina": 5,
+        "maxStamina": 7,
+        "minLoyalty": 6,
+        "maxLoyalty": 9
+      },
+      "baseWage": 18.00,
+      "startingSkills": [
+        "basic_training",
+        "customer_service_101",
+        "safety_training",
+        "leadership_basics",
+        "schedule_management"
+      ],
+      "hiringRequirements": {
+        "businessTier": 2,
+        "interviewRequired": true,
+        "backgroundCheck": true,
+        "minimumExperience": "2 years retail management"
+      },
+      "taskCapabilities": [
+        "staff_supervision",
+        "shift_scheduling",
+        "customer_escalations",
+        "register_override",
+        "inventory_management",
+        "opening_closing_procedures",
+        "training_staff"
+      ],
+      "managementCapabilities": {
+        "maxDirectReports": 5,
+        "canHire": true,
+        "canFire": false,
+        "canApproveOvertime": true,
+        "canHandleComplaints": true
+      },
+      "promotionPath": "staff_manager_assistant_store"
+    }
+  ],
+  "skillDefinitions": {
+    "basic_training": {
+      "skillId": "basic_training",
+      "skillName": "Basic Training",
+      "description": "Fundamental workplace skills and procedures",
+      "tier": 1,
+      "trainingHours": 4,
+      "trainingCost": 0,
+      "effects": {
+        "taskSpeed": 0.05,
+        "taskAccuracy": 0.05
+      }
+    },
+    "customer_service_101": {
+      "skillId": "customer_service_101",
+      "skillName": "Customer Service 101",
+      "description": "Basic customer interaction and service skills",
+      "tier": 1,
+      "trainingHours": 8,
+      "trainingCost": 50,
+      "prerequisites": ["basic_training"],
+      "effects": {
+        "customerSatisfaction": 0.05,
+        "charismaBonus": 1
+      }
+    },
+    "safety_training": {
+      "skillId": "safety_training",
+      "skillName": "Safety Training",
+      "description": "Workplace safety and equipment handling",
+      "tier": 1,
+      "trainingHours": 4,
+      "trainingCost": 25,
+      "effects": {
+        "equipmentAccess": true,
+        "accidentReduction": 0.50
+      }
+    },
+    "leadership_basics": {
+      "skillId": "leadership_basics",
+      "skillName": "Leadership Basics",
+      "description": "Fundamental management and leadership skills",
+      "tier": 2,
+      "trainingHours": 16,
+      "trainingCost": 200,
+      "prerequisites": ["basic_training", "customer_service_101"],
+      "effects": {
+        "canSupervise": true,
+        "teamBonus": 0.05
+      }
+    },
+    "schedule_management": {
+      "skillId": "schedule_management",
+      "skillName": "Schedule Management",
+      "description": "Staff scheduling and shift management",
+      "tier": 2,
+      "trainingHours": 8,
+      "trainingCost": 100,
+      "prerequisites": ["leadership_basics"],
+      "effects": {
+        "canCreateSchedules": true,
+        "laborEfficiency": 0.10
+      }
+    }
+  },
+  "wageMultipliers": {
+    "morning": 1.0,
+    "afternoon": 1.0,
+    "evening": 1.5,
+    "weekend": 1.25,
+    "holiday": 2.0
+  }
+}
