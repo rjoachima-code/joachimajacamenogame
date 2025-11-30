@@ -1,0 +1,52 @@
+{
+  "districtName": "Fame",
+  "districtType": "Fame",
+  "description": "The entertainment and celebrity district. Home to studios, theaters, and glamorous nightlife. Dreams are made here, but so are broken hearts.",
+  "theme": "Entertainment & Celebrity",
+  "color": {
+    "primary": "#FFD700",
+    "secondary": "#FFA500",
+    "accent": "#FF6347"
+  },
+  "economy": {
+    "baseRentCost": 1500,
+    "costOfLivingMultiplier": 2.0,
+    "averageWage": 150,
+    "jobAvailability": "Medium"
+  },
+  "housing": {
+    "maxSlots": 8,
+    "styles": ["Luxury Apartment", "Studio Loft", "Penthouse"],
+    "averageRent": 1500
+  },
+  "businesses": {
+    "types": ["Entertainment Venue", "Restaurant", "Fashion Boutique", "Media Company", "Talent Agency"],
+    "startupCostMultiplier": 1.5
+  },
+  "npcs": {
+    "types": ["Celebrity", "Paparazzi", "TalentAgent", "Entertainer", "Bodyguard", "Socialite"],
+    "maxCount": 60,
+    "density": "High"
+  },
+  "weather": {
+    "rainChance": 0.2,
+    "fogChance": 0.05,
+    "sunnyBias": 0.6
+  },
+  "trainStation": {
+    "name": "Fame Central Station",
+    "position": { "x": 100, "y": 0, "z": 0 },
+    "lineColor": "#FFD700"
+  },
+  "landmarks": [
+    "Star Walk of Fame",
+    "Grand Theater",
+    "Celebrity Heights",
+    "Sunset Strip"
+  ],
+  "ambience": {
+    "daytimeAtmosphere": "Busy with tours and photoshoots",
+    "nighttimeAtmosphere": "Vibrant nightlife and premiere events",
+    "soundscape": ["Crowd chatter", "Camera flashes", "Music from venues"]
+  }
+}

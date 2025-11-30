@@ -1,43 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.TextMeshPro.Editor.csproj": {}
+    "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.TextMeshPro.Editor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.Burst.csproj": {
+    "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.Burst.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.Burst.csproj",
+        "projectUniqueName": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.Burst.csproj",
         "projectName": "Unity.Burst",
-        "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.Burst.csproj",
-        "packagesPath": "C:\\Users\\Ve7gasKnights\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Temp\\obj\\Unity.Burst\\",
+        "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.Burst.csproj",
+        "packagesPath": "/home/runner/work/joachimajacamenogame/.codeql-scratch/dbs/csharp/working/packages",
+        "outputPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Temp/obj/Unity.Burst/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Ve7gasKnights\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/runner/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEditor.UI.csproj": {
-                "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEditor.UI.csproj"
+              "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEditor.UI.csproj": {
+                "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEditor.UI.csproj"
               },
-              "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEngine.UI.csproj": {
-                "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEngine.UI.csproj"
+              "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEngine.UI.csproj": {
+                "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEngine.UI.csproj"
               }
             }
           }
@@ -52,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "netstandard2.1": {
@@ -68,50 +61,43 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.100/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.Collections.csproj": {
+    "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.Collections.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.Collections.csproj",
+        "projectUniqueName": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.Collections.csproj",
         "projectName": "Unity.Collections",
-        "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.Collections.csproj",
-        "packagesPath": "C:\\Users\\Ve7gasKnights\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Temp\\obj\\Unity.Collections\\",
+        "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.Collections.csproj",
+        "packagesPath": "/home/runner/work/joachimajacamenogame/.codeql-scratch/dbs/csharp/working/packages",
+        "outputPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Temp/obj/Unity.Collections/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Ve7gasKnights\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/runner/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.Burst.csproj": {
-                "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.Burst.csproj"
+              "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.Burst.csproj": {
+                "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.Burst.csproj"
               },
-              "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.Mathematics.csproj": {
-                "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.Mathematics.csproj"
+              "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.Mathematics.csproj": {
+                "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.Mathematics.csproj"
               },
-              "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEditor.UI.csproj": {
-                "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEditor.UI.csproj"
+              "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEditor.UI.csproj": {
+                "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEditor.UI.csproj"
               },
-              "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEngine.UI.csproj": {
-                "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEngine.UI.csproj"
+              "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEngine.UI.csproj": {
+                "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEngine.UI.csproj"
               }
             }
           }
@@ -126,7 +112,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "netstandard2.1": {
@@ -142,44 +128,37 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.100/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.InputSystem.csproj": {
+    "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.InputSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.InputSystem.csproj",
+        "projectUniqueName": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.InputSystem.csproj",
         "projectName": "Unity.InputSystem",
-        "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.InputSystem.csproj",
-        "packagesPath": "C:\\Users\\Ve7gasKnights\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Temp\\obj\\Unity.InputSystem\\",
+        "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.InputSystem.csproj",
+        "packagesPath": "/home/runner/work/joachimajacamenogame/.codeql-scratch/dbs/csharp/working/packages",
+        "outputPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Temp/obj/Unity.InputSystem/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Ve7gasKnights\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/runner/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEditor.UI.csproj": {
-                "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEditor.UI.csproj"
+              "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEditor.UI.csproj": {
+                "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEditor.UI.csproj"
               },
-              "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEngine.UI.csproj": {
-                "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEngine.UI.csproj"
+              "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEngine.UI.csproj": {
+                "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEngine.UI.csproj"
               }
             }
           }
@@ -194,7 +173,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "netstandard2.1": {
@@ -210,44 +189,37 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.100/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.Mathematics.csproj": {
+    "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.Mathematics.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.Mathematics.csproj",
+        "projectUniqueName": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.Mathematics.csproj",
         "projectName": "Unity.Mathematics",
-        "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.Mathematics.csproj",
-        "packagesPath": "C:\\Users\\Ve7gasKnights\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Temp\\obj\\Unity.Mathematics\\",
+        "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.Mathematics.csproj",
+        "packagesPath": "/home/runner/work/joachimajacamenogame/.codeql-scratch/dbs/csharp/working/packages",
+        "outputPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Temp/obj/Unity.Mathematics/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Ve7gasKnights\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/runner/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEditor.UI.csproj": {
-                "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEditor.UI.csproj"
+              "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEditor.UI.csproj": {
+                "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEditor.UI.csproj"
               },
-              "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEngine.UI.csproj": {
-                "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEngine.UI.csproj"
+              "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEngine.UI.csproj": {
+                "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEngine.UI.csproj"
               }
             }
           }
@@ -262,7 +234,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "netstandard2.1": {
@@ -278,56 +250,49 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.100/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.RenderPipelines.Core.Runtime.csproj": {
+    "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.RenderPipelines.Core.Runtime.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.RenderPipelines.Core.Runtime.csproj",
+        "projectUniqueName": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.RenderPipelines.Core.Runtime.csproj",
         "projectName": "Unity.RenderPipelines.Core.Runtime",
-        "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.RenderPipelines.Core.Runtime.csproj",
-        "packagesPath": "C:\\Users\\Ve7gasKnights\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Temp\\obj\\Unity.RenderPipelines.Core.Runtime\\",
+        "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.RenderPipelines.Core.Runtime.csproj",
+        "packagesPath": "/home/runner/work/joachimajacamenogame/.codeql-scratch/dbs/csharp/working/packages",
+        "outputPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Temp/obj/Unity.RenderPipelines.Core.Runtime/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Ve7gasKnights\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/runner/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.Burst.csproj": {
-                "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.Burst.csproj"
+              "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.Burst.csproj": {
+                "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.Burst.csproj"
               },
-              "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.Collections.csproj": {
-                "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.Collections.csproj"
+              "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.Collections.csproj": {
+                "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.Collections.csproj"
               },
-              "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.InputSystem.csproj": {
-                "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.InputSystem.csproj"
+              "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.InputSystem.csproj": {
+                "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.InputSystem.csproj"
               },
-              "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.Mathematics.csproj": {
-                "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.Mathematics.csproj"
+              "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.Mathematics.csproj": {
+                "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.Mathematics.csproj"
               },
-              "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEditor.UI.csproj": {
-                "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEditor.UI.csproj"
+              "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEditor.UI.csproj": {
+                "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEditor.UI.csproj"
               },
-              "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEngine.UI.csproj": {
-                "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEngine.UI.csproj"
+              "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEngine.UI.csproj": {
+                "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEngine.UI.csproj"
               }
             }
           }
@@ -342,7 +307,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "netstandard2.1": {
@@ -358,124 +323,49 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.100/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.TextMeshPro.csproj": {
+    "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.TextMeshPro.Editor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.TextMeshPro.csproj",
-        "projectName": "Unity.TextMeshPro",
-        "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.TextMeshPro.csproj",
-        "packagesPath": "C:\\Users\\Ve7gasKnights\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Temp\\obj\\Unity.TextMeshPro\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Ve7gasKnights\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netstandard2.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netstandard2.1": {
-            "targetAlias": "netstandard2.1",
-            "projectReferences": {
-              "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEditor.UI.csproj": {
-                "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEditor.UI.csproj"
-              },
-              "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEngine.UI.csproj": {
-                "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEngine.UI.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
-      },
-      "frameworks": {
-        "netstandard2.1": {
-          "targetAlias": "netstandard2.1",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.TextMeshPro.Editor.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.TextMeshPro.Editor.csproj",
+        "projectUniqueName": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.TextMeshPro.Editor.csproj",
         "projectName": "Unity.TextMeshPro.Editor",
-        "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.TextMeshPro.Editor.csproj",
-        "packagesPath": "C:\\Users\\Ve7gasKnights\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Temp\\obj\\Unity.TextMeshPro.Editor\\",
+        "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.TextMeshPro.Editor.csproj",
+        "packagesPath": "/home/runner/work/joachimajacamenogame/.codeql-scratch/dbs/csharp/working/packages",
+        "outputPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Temp/obj/Unity.TextMeshPro.Editor/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Ve7gasKnights\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/runner/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.RenderPipelines.Core.Runtime.csproj": {
-                "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.RenderPipelines.Core.Runtime.csproj"
+              "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.RenderPipelines.Core.Runtime.csproj": {
+                "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.RenderPipelines.Core.Runtime.csproj"
               },
-              "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.TextMeshPro.csproj": {
-                "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Unity.TextMeshPro.csproj"
+              "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.TextMeshPro.csproj": {
+                "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.TextMeshPro.csproj"
               },
-              "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEditor.TestRunner.csproj": {
-                "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEditor.TestRunner.csproj"
+              "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEditor.TestRunner.csproj": {
+                "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEditor.TestRunner.csproj"
               },
-              "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEditor.UI.csproj": {
-                "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEditor.UI.csproj"
+              "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEditor.UI.csproj": {
+                "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEditor.UI.csproj"
               },
-              "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEngine.TestRunner.csproj": {
-                "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEngine.TestRunner.csproj"
+              "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEngine.TestRunner.csproj": {
+                "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEngine.TestRunner.csproj"
               },
-              "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEngine.UI.csproj": {
-                "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEngine.UI.csproj"
+              "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEngine.UI.csproj": {
+                "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEngine.UI.csproj"
               }
             }
           }
@@ -490,7 +380,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "netstandard2.1": {
@@ -506,41 +396,95 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.100/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEditor.TestRunner.csproj": {
+    "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.TextMeshPro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEditor.TestRunner.csproj",
+        "projectUniqueName": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.TextMeshPro.csproj",
+        "projectName": "Unity.TextMeshPro",
+        "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Unity.TextMeshPro.csproj",
+        "packagesPath": "/home/runner/work/joachimajacamenogame/.codeql-scratch/dbs/csharp/working/packages",
+        "outputPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Temp/obj/Unity.TextMeshPro/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/runner/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEditor.UI.csproj": {
+                "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEditor.UI.csproj"
+              },
+              "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEngine.UI.csproj": {
+                "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEditor.TestRunner.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEditor.TestRunner.csproj",
         "projectName": "UnityEditor.TestRunner",
-        "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEditor.TestRunner.csproj",
-        "packagesPath": "C:\\Users\\Ve7gasKnights\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Temp\\obj\\UnityEditor.TestRunner\\",
+        "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEditor.TestRunner.csproj",
+        "packagesPath": "/home/runner/work/joachimajacamenogame/.codeql-scratch/dbs/csharp/working/packages",
+        "outputPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Temp/obj/UnityEditor.TestRunner/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Ve7gasKnights\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/runner/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEngine.TestRunner.csproj": {
-                "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEngine.TestRunner.csproj"
+              "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEngine.TestRunner.csproj": {
+                "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEngine.TestRunner.csproj"
               }
             }
           }
@@ -555,7 +499,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "netstandard2.1": {
@@ -571,47 +515,40 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.100/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEditor.UI.csproj": {
+    "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEditor.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEditor.UI.csproj",
+        "projectUniqueName": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEditor.UI.csproj",
         "projectName": "UnityEditor.UI",
-        "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEditor.UI.csproj",
-        "packagesPath": "C:\\Users\\Ve7gasKnights\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Temp\\obj\\UnityEditor.UI\\",
+        "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEditor.UI.csproj",
+        "packagesPath": "/home/runner/work/joachimajacamenogame/.codeql-scratch/dbs/csharp/working/packages",
+        "outputPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Temp/obj/UnityEditor.UI/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Ve7gasKnights\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/runner/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEditor.TestRunner.csproj": {
-                "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEditor.TestRunner.csproj"
+              "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEditor.TestRunner.csproj": {
+                "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEditor.TestRunner.csproj"
               },
-              "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEngine.TestRunner.csproj": {
-                "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEngine.TestRunner.csproj"
+              "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEngine.TestRunner.csproj": {
+                "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEngine.TestRunner.csproj"
               },
-              "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEngine.UI.csproj": {
-                "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEngine.UI.csproj"
+              "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEngine.UI.csproj": {
+                "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEngine.UI.csproj"
               }
             }
           }
@@ -626,7 +563,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "netstandard2.1": {
@@ -642,33 +579,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.100/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEngine.TestRunner.csproj": {
+    "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEngine.TestRunner.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEngine.TestRunner.csproj",
+        "projectUniqueName": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEngine.TestRunner.csproj",
         "projectName": "UnityEngine.TestRunner",
-        "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEngine.TestRunner.csproj",
-        "packagesPath": "C:\\Users\\Ve7gasKnights\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Temp\\obj\\UnityEngine.TestRunner\\",
+        "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEngine.TestRunner.csproj",
+        "packagesPath": "/home/runner/work/joachimajacamenogame/.codeql-scratch/dbs/csharp/working/packages",
+        "outputPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Temp/obj/UnityEngine.TestRunner/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Ve7gasKnights\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/runner/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -687,7 +617,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "netstandard2.1": {
@@ -703,33 +633,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.100/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEngine.UI.csproj": {
+    "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEngine.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEngine.UI.csproj",
+        "projectUniqueName": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEngine.UI.csproj",
         "projectName": "UnityEngine.UI",
-        "projectPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\UnityEngine.UI.csproj",
-        "packagesPath": "C:\\Users\\Ve7gasKnights\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ve7gasKnights\\joachimajacamenogame\\My project (4)\\Temp\\obj\\UnityEngine.UI\\",
+        "projectPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/UnityEngine.UI.csproj",
+        "packagesPath": "/home/runner/work/joachimajacamenogame/.codeql-scratch/dbs/csharp/working/packages",
+        "outputPath": "/home/runner/work/joachimajacamenogame/joachimajacamenogame/My project (4)/Temp/obj/UnityEngine.UI/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Ve7gasKnights\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/runner/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -748,7 +671,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "netstandard2.1": {
@@ -764,7 +687,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }

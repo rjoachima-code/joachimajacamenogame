@@ -1,0 +1,52 @@
+{
+  "districtName": "Kiyo",
+  "districtType": "Kiyo",
+  "description": "The technology and innovation district. Sleek architecture, startup incubators, and the latest gadgets. Where the future is being built today.",
+  "theme": "Technology & Innovation",
+  "color": {
+    "primary": "#00BFFF",
+    "secondary": "#1E90FF",
+    "accent": "#4169E1"
+  },
+  "economy": {
+    "baseRentCost": 1200,
+    "costOfLivingMultiplier": 1.5,
+    "averageWage": 200,
+    "jobAvailability": "High"
+  },
+  "housing": {
+    "maxSlots": 12,
+    "styles": ["Smart Apartment", "Tech Loft", "Micro Unit", "Co-living Space"],
+    "averageRent": 1200
+  },
+  "businesses": {
+    "types": ["Tech Startup", "Coffee Shop", "Electronics Store", "Co-working Space", "VR Arcade"],
+    "startupCostMultiplier": 1.2
+  },
+  "npcs": {
+    "types": ["TechEngineer", "StartupFounder", "Researcher", "ITSupport", "Barista", "Gamer"],
+    "maxCount": 50,
+    "density": "Medium"
+  },
+  "weather": {
+    "rainChance": 0.25,
+    "fogChance": 0.08,
+    "sunnyBias": 0.5
+  },
+  "trainStation": {
+    "name": "Kiyo Tech Hub Station",
+    "position": { "x": -100, "y": 0, "z": 0 },
+    "lineColor": "#1E90FF"
+  },
+  "landmarks": [
+    "Innovation Tower",
+    "Tech Campus",
+    "Digital Art Museum",
+    "Startup Incubator"
+  ],
+  "ambience": {
+    "daytimeAtmosphere": "Busy tech workers, drone deliveries",
+    "nighttimeAtmosphere": "Glowing screens, late-night coding sessions",
+    "soundscape": ["Keyboard typing", "Coffee machines", "Notification sounds", "Electric vehicles"]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "districtName": "Remi",
+  "districtType": "Remi",
+  "description": "The residential and family-oriented district. Quiet neighborhoods with parks, schools, and community centers. A peaceful place to call home.",
+  "theme": "Residential & Family",
+  "color": {
+    "primary": "#90EE90",
+    "secondary": "#32CD32",
+    "accent": "#228B22"
+  },
+  "economy": {
+    "baseRentCost": 800,
+    "costOfLivingMultiplier": 1.0,
+    "averageWage": 80,
+    "jobAvailability": "Low"
+  },
+  "housing": {
+    "maxSlots": 20,
+    "styles": ["Family Home", "Apartment", "Townhouse", "Cottage"],
+    "averageRent": 800
+  },
+  "businesses": {
+    "types": ["Grocery Store", "Bakery", "Daycare Center", "Pet Store", "Community Cafe"],
+    "startupCostMultiplier": 0.8
+  },
+  "npcs": {
+    "types": ["FamilyPerson", "Teacher", "ParkRanger", "NeighborhoodWatch", "Mailcarrier", "Dog Walker"],
+    "maxCount": 80,
+    "density": "Medium"
+  },
+  "weather": {
+    "rainChance": 0.35,
+    "fogChance": 0.1,
+    "sunnyBias": 0.4
+  },
+  "trainStation": {
+    "name": "Remi Gardens Station",
+    "position": { "x": 0, "y": 0, "z": 100 },
+    "lineColor": "#32CD32"
+  },
+  "landmarks": [
+    "Central Park",
+    "Remi Elementary School",
+    "Community Center",
+    "Farmers Market"
+  ],
+  "ambience": {
+    "daytimeAtmosphere": "Children playing, neighbors chatting",
+    "nighttimeAtmosphere": "Quiet and peaceful, occasional dog barking",
+    "soundscape": ["Birds chirping", "Children laughing", "Lawn mowers", "Ice cream truck"]
+  }
+}
