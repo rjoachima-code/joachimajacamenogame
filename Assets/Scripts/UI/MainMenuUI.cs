@@ -68,10 +68,18 @@ public class MainMenuUI : MonoBehaviour
     /// </summary>
     private void OnQuitClicked()
     {
+        // Delegate to GameManager if available for consistency
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.QuitGame();
+        }
+        else
+        {
 #if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
+            UnityEditor.EditorApplication.isPlaying = false;
 #else
-        Application.Quit();
+            Application.Quit();
 #endif
+        }
     }
 }
