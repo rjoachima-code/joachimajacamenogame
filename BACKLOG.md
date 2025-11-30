@@ -270,7 +270,7 @@
 | Scope creep | Focus ONLY on Fame district for Alpha |
 | Integration bugs | Daily builds, automated testing |
 | Performance issues | Profile every sprint, set hard budgets |
-| Team availability | Document everything, cross-train on systems |
+| Team availability | Document everything, provide cross-training on systems |
 
 ---
 

@@ -114,7 +114,7 @@
 | City Bus | FBX | 30,000 tris | 4K PBR | ❌ MISSING |
 | Taxi Cab | FBX | 25,000 tris | 4K PBR | ❌ MISSING |
 | Delivery Van | FBX | 22,000 tris | 2K PBR | ❌ MISSING |
-| **Car Paint Shader** | Shader | N/A | N/A | ❌ MISSING |
+| **Car Paint Shader** | Shader Graph | N/A | N/A | ❌ MISSING |
 | **Car Reflection Probe Setup** | Prefab | N/A | N/A | ❌ MISSING |
 
 ### NPC Models

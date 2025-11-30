@@ -256,16 +256,33 @@ LOD Groups:
 
 ### Car Paint Shader (Custom Shader Graph)
 
-```hlsl
-// Shader Graph Properties
-_BaseColor ("Base Color", Color) = (1, 0, 0, 1)
-_Metallic ("Metallic", Range(0,1)) = 0.9
-_Smoothness ("Smoothness", Range(0,1)) = 0.95
-_ClearCoat ("Clear Coat", Range(0,1)) = 1.0
-_ClearCoatSmoothness ("Clear Coat Smoothness", Range(0,1)) = 0.98
-_FlakeNormalMap ("Metallic Flakes", 2D) = "bump" {}
-_FlakeScale ("Flake Scale", Float) = 50
-_FresnelPower ("Fresnel Power", Float) = 5
+```yaml
+# Unity Shader Graph Properties (Create in Shader Graph editor)
+Properties:
+  Base Color:
+    Type: Color
+    Default: (1, 0, 0, 1)  # Red
+  Metallic:
+    Type: Float (Slider 0-1)
+    Default: 0.9
+  Smoothness:
+    Type: Float (Slider 0-1)
+    Default: 0.95
+  Clear Coat:
+    Type: Float (Slider 0-1)
+    Default: 1.0
+  Clear Coat Smoothness:
+    Type: Float (Slider 0-1)
+    Default: 0.98
+  Metallic Flakes Normal Map:
+    Type: Texture2D
+    Default: "bump"
+  Flake Scale:
+    Type: Float
+    Default: 50
+  Fresnel Power:
+    Type: Float
+    Default: 5
 ```
 
 ### Standard Environment Material
