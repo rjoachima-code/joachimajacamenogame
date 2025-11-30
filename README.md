@@ -1,6 +1,39 @@
-# Jacameno: Adult Life - Unity Prototype
+# Jacameno: Adult Life - Unity 3D Platformer Prototype
 
-A 3D life-simulator game focused on surviving adult responsibilities.
+A 3D Platformer game focused on surviving adult responsibilities through exploration, collection, and mini-games. Experience the challenges of adult life in an engaging 3D world where you manage work, bills, and daily needs.
+
+## Game Description
+
+**Jacameno: Adult Life** is a 3D Platformer that combines life simulation elements with classic platformer mechanics. Navigate through a vibrant world, collect items, complete quests, and manage your character's daily responsibilities including work, bills, and personal needs.
+
+## Controls
+
+| Action | Input |
+|--------|-------|
+| Move | WASD / Arrow Keys |
+| Jump | Space |
+| Sprint | Shift |
+| Look Around | Mouse |
+| Interact | E |
+| Inventory | I |
+| Phone | P |
+| Pause Menu | ESC |
+
+## Installation Instructions
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/rjoachima-code/joachimajacamenogame.git
+   ```
+2. Open the project in Unity 2022+
+3. Ensure URP and New Input System packages are installed
+4. Open the MainMenu scene and press Play
+
+## Credits
+
+**Created and Maintained by Joa'Chima Ross Jr**
+
+---
 
 ## Engine Requirements
 - Unity 2022+

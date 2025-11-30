@@ -11,6 +11,7 @@ public class HUDManager : MonoBehaviour
     [SerializeField] private Slider hungerBar;
     [SerializeField] private Slider energyBar;
     [SerializeField] private TMP_Text moneyText;
+    [SerializeField] private TMP_Text scoreText;
 
     private void Awake()
     {
@@ -44,6 +45,7 @@ public class HUDManager : MonoBehaviour
         UpdateEnergy(PlayerStats.Instance?.GetEnergy() ?? 100f);
         UpdateMoney(PlayerStats.Instance?.GetMoney() ?? 100);
         UpdateClock(TimeSystem.Instance?.Hour ?? 8, TimeSystem.Instance?.Minute ?? 0);
+        UpdateScore(0);
     }
 
     private void OnDestroy()
@@ -91,6 +93,18 @@ public class HUDManager : MonoBehaviour
             int displayHour = hour > 12 ? hour - 12 : hour;
             if (displayHour == 0) displayHour = 12;
             clockText.text = $"{displayHour}:{minute:D2} {period}";
+        }
+    }
+
+    /// <summary>
+    /// Updates the score display on the HUD.
+    /// </summary>
+    /// <param name="score">The current score to display.</param>
+    public void UpdateScore(int score)
+    {
+        if (scoreText != null)
+        {
+            scoreText.text = $"Score: {score}";
         }
     }
 }
