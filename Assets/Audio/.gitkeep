@@ -1,4 +1,24 @@
-# This folder contains audio files
-# Add your audio files here:
-# - Jump.wav (or .mp3, .ogg) - Jump sound effect
-# - BackgroundMusic.wav (or .mp3, .ogg) - Background music
+# Audio Assets Folder
+# ===================
+# This folder contains audio files for the game.
+#
+# Required Audio Files:
+# ---------------------
+# 1. Jump.wav (or .mp3, .ogg) - Jump sound effect
+#    - Short, punchy sound for player jump action
+#    - Recommended: 0.1-0.3 seconds duration
+#
+# 2. BackgroundMusic.wav (or .mp3, .ogg) - Background music
+#    - Looping ambient/background track
+#    - Recommended: 1-3 minutes loop
+#
+# Setup Instructions:
+# -------------------
+# 1. Add your audio files to this folder
+# 2. In Unity, select AudioManager in the scene hierarchy
+# 3. Assign the audio clips to the appropriate fields:
+#    - jumpSFX -> Jump sound effect
+#    - backgroundMusic -> Background music track
+#
+# Note: The AudioManager singleton will automatically play background
+# music on Start() and provides PlayJumpSFX() for jump sounds.

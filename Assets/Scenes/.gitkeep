@@ -1,1 +1,20 @@
-# This folder contains Unity scene files
+# Unity Scene Files
+# =================
+# This folder contains Unity scene files for the game.
+#
+# Available Scenes:
+# -----------------
+# - MainMenu.unity - Main menu with Start Game and Quit buttons
+# - MainGame.unity - Main gameplay scene (to be created in Unity Editor)
+#
+# Scene Setup Notes:
+# ------------------
+# MainMenu Scene:
+# - Contains MainMenuCanvas with Start Game and Quit buttons
+# - MainMenuUI script handles button click events
+# - GameManager singleton manages scene transitions
+#
+# To add scenes to build:
+# 1. Open File > Build Settings in Unity
+# 2. Add MainMenu and MainGame scenes
+# 3. Ensure MainMenu is scene index 0
