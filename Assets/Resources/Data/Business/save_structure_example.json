@@ -1,0 +1,321 @@
+{
+  "saveVersion": "1.0.0",
+  "timestamp": "2024-01-15T14:30:00Z",
+  "gameVersion": "0.1.0",
+  
+  "playerData": {
+    "playerId": "player_001",
+    "playerName": "Player Name",
+    "totalMoney": 15000.00,
+    "totalBusinessPoints": 250,
+    "totalExperience": 5000,
+    "playerLevel": 12,
+    "playTimeHours": 48.5,
+    "achievementsUnlocked": ["store_owner", "first_employee", "community_pillar"],
+    "tutorialCompleted": true
+  },
+  
+  "timeData": {
+    "currentDay": 45,
+    "currentHour": 14,
+    "currentMinute": 30,
+    "season": "summer",
+    "weatherState": "clear"
+  },
+  
+  "businesses": [
+    {
+      "businessId": "hypermarket_001",
+      "businessType": "Hypermarket",
+      "businessName": "Downtown Market",
+      "tier": 2,
+      "tierName": "Neighborhood Market",
+      
+      "reputation": {
+        "overall": 3.8,
+        "serviceSpeed": 4.0,
+        "quality": 3.5,
+        "cleanliness": 4.2,
+        "ambiance": 3.5,
+        "value": 3.8
+      },
+      
+      "finances": {
+        "cashBalance": 8500.00,
+        "businessPoints": 120,
+        "dailyStats": {
+          "dayNumber": 45,
+          "revenue": 1250.45,
+          "expenses": 400.00,
+          "profit": 850.45,
+          "customersServed": 47,
+          "tasksCompleted": 15,
+          "incidentCount": 0,
+          "averageServiceTime": 4.5,
+          "customerSatisfaction": 4.1
+        },
+        "weeklyStats": {
+          "totalRevenue": 8750.00,
+          "totalExpenses": 2800.00,
+          "totalProfit": 5950.00,
+          "totalCustomers": 312
+        },
+        "monthlyStats": {
+          "totalRevenue": 35000.00,
+          "totalExpenses": 11200.00,
+          "totalProfit": 23800.00,
+          "totalCustomers": 1245
+        }
+      },
+      
+      "state": {
+        "isOpen": true,
+        "currentCustomers": 12,
+        "maxCustomers": 75,
+        "openingHour": 6,
+        "closingHour": 22
+      },
+      
+      "departments": [
+        {
+          "departmentId": "grocery",
+          "isUnlocked": true,
+          "stockLevel": 0.75,
+          "cleanliness": 0.90
+        },
+        {
+          "departmentId": "fresh_produce",
+          "isUnlocked": true,
+          "stockLevel": 0.60,
+          "cleanliness": 0.85
+        },
+        {
+          "departmentId": "bakery",
+          "isUnlocked": false,
+          "stockLevel": 0.0,
+          "cleanliness": 1.0
+        }
+      ],
+      
+      "inventory": {
+        "totalValue": 12450.00,
+        "itemCount": 450,
+        "lowStockItems": ["prod_milk_whole", "prod_bread_white"],
+        "items": [
+          {
+            "productId": "prod_apple_gala",
+            "quantity": 45,
+            "purchasePrice": 0.65,
+            "sellPrice": 1.29,
+            "lastRestockTime": "2024-01-15T06:00:00Z",
+            "expirationDate": "2024-01-29"
+          },
+          {
+            "productId": "prod_banana_bundle",
+            "quantity": 30,
+            "purchasePrice": 0.95,
+            "sellPrice": 1.99,
+            "lastRestockTime": "2024-01-15T06:00:00Z",
+            "expirationDate": "2024-01-22"
+          }
+        ]
+      },
+      
+      "staff": [
+        {
+          "staffId": "staff_001",
+          "staffName": "John Smith",
+          "role": "Cashier",
+          "attributes": {
+            "speed": 7,
+            "accuracy": 8,
+            "charisma": 6,
+            "maintenance": 4,
+            "stamina": 7,
+            "loyalty": 8
+          },
+          "experience": 250,
+          "level": 3,
+          "skills": ["basic_training", "customer_service_101", "efficiency_1"],
+          "schedule": {
+            "monday": { "shift": "morning", "startHour": 6, "hours": 8 },
+            "tuesday": { "shift": "morning", "startHour": 6, "hours": 8 },
+            "wednesday": { "shift": "off", "startHour": 0, "hours": 0 },
+            "thursday": { "shift": "morning", "startHour": 6, "hours": 8 },
+            "friday": { "shift": "morning", "startHour": 6, "hours": 8 },
+            "saturday": { "shift": "afternoon", "startHour": 14, "hours": 8 },
+            "sunday": { "shift": "off", "startHour": 0, "hours": 0 }
+          },
+          "hourlyWage": 12.50,
+          "morale": 85,
+          "fatigue": 20,
+          "isOnDuty": true,
+          "hireDate": "2024-01-05"
+        },
+        {
+          "staffId": "staff_002",
+          "staffName": "Sarah Johnson",
+          "role": "Stocker",
+          "attributes": {
+            "speed": 8,
+            "accuracy": 6,
+            "charisma": 4,
+            "maintenance": 6,
+            "stamina": 9,
+            "loyalty": 7
+          },
+          "experience": 180,
+          "level": 2,
+          "skills": ["basic_training", "safety_training"],
+          "schedule": {
+            "monday": { "shift": "afternoon", "startHour": 14, "hours": 8 },
+            "tuesday": { "shift": "afternoon", "startHour": 14, "hours": 8 },
+            "wednesday": { "shift": "afternoon", "startHour": 14, "hours": 8 },
+            "thursday": { "shift": "afternoon", "startHour": 14, "hours": 8 },
+            "friday": { "shift": "afternoon", "startHour": 14, "hours": 8 },
+            "saturday": { "shift": "off", "startHour": 0, "hours": 0 },
+            "sunday": { "shift": "off", "startHour": 0, "hours": 0 }
+          },
+          "hourlyWage": 11.00,
+          "morale": 78,
+          "fatigue": 35,
+          "isOnDuty": false,
+          "hireDate": "2024-01-08"
+        }
+      ],
+      
+      "equipment": [
+        {
+          "equipmentId": "register_001",
+          "equipmentType": "basic_register",
+          "name": "Checkout Register 1",
+          "condition": 85,
+          "efficiency": 1.0,
+          "lastMaintenance": "2024-01-10",
+          "maintenanceDue": "2024-01-25"
+        },
+        {
+          "equipmentId": "register_002",
+          "equipmentType": "express_register",
+          "name": "Express Register",
+          "condition": 92,
+          "efficiency": 1.3,
+          "lastMaintenance": "2024-01-12",
+          "maintenanceDue": "2024-01-27"
+        },
+        {
+          "equipmentId": "fridge_001",
+          "equipmentType": "refrigeration_unit",
+          "name": "Produce Cooler",
+          "condition": 78,
+          "efficiency": 0.95,
+          "lastMaintenance": "2024-01-05",
+          "maintenanceDue": "2024-01-20"
+        }
+      ],
+      
+      "unlocks": {
+        "departments": ["grocery", "fresh_produce"],
+        "equipment": ["basic_register", "express_register", "refrigeration_unit"],
+        "decorations": ["basic_signage", "floor_graphics", "product_displays"],
+        "services": [],
+        "marketing": []
+      },
+      
+      "missions": {
+        "completed": [
+          {
+            "missionId": "mission_hypermarket_first_day",
+            "completionDate": "2024-01-02T18:30:00Z",
+            "rewardsCollected": true
+          },
+          {
+            "missionId": "mission_hypermarket_fresh_start",
+            "completionDate": "2024-01-07T16:45:00Z",
+            "rewardsCollected": true
+          }
+        ],
+        "active": [
+          {
+            "missionId": "mission_hypermarket_community_pillar",
+            "startDate": "2024-01-10T09:00:00Z",
+            "objectives": [
+              { "objectiveId": "maintain_rating", "currentProgress": 5, "targetProgress": 7 },
+              { "objectiveId": "host_event", "currentProgress": 0, "targetProgress": 1 },
+              { "objectiveId": "hire_local", "currentProgress": 2, "targetProgress": 3 },
+              { "objectiveId": "donate_charity", "currentProgress": 400, "targetProgress": 1000 }
+            ]
+          }
+        ],
+        "available": ["mission_hypermarket_supply_chain_master"]
+      },
+      
+      "events": {
+        "active": [
+          {
+            "eventId": "evt_supply_delay_001",
+            "eventType": "SupplyDelay",
+            "eventName": "Supply Delay - Dairy",
+            "affectedTarget": "dairy",
+            "startTime": "2024-01-14T08:00:00Z",
+            "endTime": "2024-01-16T08:00:00Z",
+            "severity": "Medium",
+            "requiresAction": false
+          }
+        ],
+        "scheduled": [
+          {
+            "eventType": "HealthInspection",
+            "triggerDay": 50,
+            "notificationSent": true
+          }
+        ],
+        "history": [
+          {
+            "eventId": "evt_breakdown_001",
+            "eventType": "MinorBreakdown",
+            "resolvedDate": "2024-01-12T14:00:00Z",
+            "outcome": "repaired"
+          }
+        ]
+      }
+    }
+  ],
+  
+  "globalMissions": {
+    "completed": ["tutorial_complete", "first_business"],
+    "active": [],
+    "available": ["multi_business_owner"]
+  },
+  
+  "globalStats": {
+    "totalRevenue": 125000.00,
+    "totalProfit": 45000.00,
+    "totalCustomersServed": 5420,
+    "totalDaysPlayed": 45,
+    "totalMissionsCompleted": 15,
+    "totalEventsHandled": 28,
+    "totalStaffHired": 5,
+    "totalStaffFired": 1,
+    "perfectDays": 12,
+    "businessesOwned": 1,
+    "highestTierReached": 2
+  },
+  
+  "settings": {
+    "difficulty": "normal",
+    "autoSave": true,
+    "autoSaveIntervalMinutes": 5,
+    "notifications": true,
+    "soundVolume": 0.8,
+    "musicVolume": 0.6,
+    "tutorialHints": false
+  },
+  
+  "metadata": {
+    "platform": "PC",
+    "saveSlot": 1,
+    "lastSaveLocation": "Downtown Market",
+    "screenshotPath": "saves/slot1_screenshot.png"
+  }
+}

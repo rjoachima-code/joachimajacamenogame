@@ -1,0 +1,149 @@
+{
+  "productCategory": "Fresh Produce",
+  "categoryId": "fresh_produce",
+  "products": [
+    {
+      "productId": "prod_apple_gala",
+      "productName": "Gala Apples",
+      "description": "Fresh, sweet Gala apples perfect for snacking",
+      "category": "fresh_produce",
+      "subcategory": "fruits",
+      "basePrice": 1.29,
+      "wholesalePrice": 0.65,
+      "unitVolume": 0.5,
+      "shelfLife": 14,
+      "tier": 1,
+      "tags": ["fruit", "healthy", "snack"]
+    },
+    {
+      "productId": "prod_banana_bundle",
+      "productName": "Banana Bundle",
+      "description": "Ripe yellow bananas, sold by the bunch",
+      "category": "fresh_produce",
+      "subcategory": "fruits",
+      "basePrice": 1.99,
+      "wholesalePrice": 0.95,
+      "unitVolume": 0.8,
+      "shelfLife": 7,
+      "tier": 1,
+      "tags": ["fruit", "healthy", "popular"]
+    },
+    {
+      "productId": "prod_orange_navel",
+      "productName": "Navel Oranges",
+      "description": "Juicy seedless navel oranges",
+      "category": "fresh_produce",
+      "subcategory": "fruits",
+      "basePrice": 1.49,
+      "wholesalePrice": 0.70,
+      "unitVolume": 0.6,
+      "shelfLife": 21,
+      "tier": 1,
+      "tags": ["fruit", "citrus", "vitamin_c"]
+    },
+    {
+      "productId": "prod_lettuce_romaine",
+      "productName": "Romaine Lettuce",
+      "description": "Crisp romaine lettuce hearts",
+      "category": "fresh_produce",
+      "subcategory": "vegetables",
+      "basePrice": 2.49,
+      "wholesalePrice": 1.10,
+      "unitVolume": 0.7,
+      "shelfLife": 10,
+      "tier": 1,
+      "tags": ["vegetable", "salad", "healthy"]
+    },
+    {
+      "productId": "prod_tomato_vine",
+      "productName": "Vine Tomatoes",
+      "description": "Fresh vine-ripened tomatoes",
+      "category": "fresh_produce",
+      "subcategory": "vegetables",
+      "basePrice": 2.99,
+      "wholesalePrice": 1.40,
+      "unitVolume": 0.5,
+      "shelfLife": 7,
+      "tier": 2,
+      "tags": ["vegetable", "cooking", "fresh"]
+    },
+    {
+      "productId": "prod_potato_russet",
+      "productName": "Russet Potatoes (5lb bag)",
+      "description": "Premium russet potatoes for baking and mashing",
+      "category": "fresh_produce",
+      "subcategory": "vegetables",
+      "basePrice": 4.99,
+      "wholesalePrice": 2.25,
+      "unitVolume": 2.0,
+      "shelfLife": 30,
+      "tier": 1,
+      "tags": ["vegetable", "staple", "bulk"]
+    },
+    {
+      "productId": "prod_onion_yellow",
+      "productName": "Yellow Onions (3lb bag)",
+      "description": "All-purpose yellow cooking onions",
+      "category": "fresh_produce",
+      "subcategory": "vegetables",
+      "basePrice": 3.49,
+      "wholesalePrice": 1.60,
+      "unitVolume": 1.5,
+      "shelfLife": 45,
+      "tier": 1,
+      "tags": ["vegetable", "cooking", "staple"]
+    },
+    {
+      "productId": "prod_avocado_hass",
+      "productName": "Hass Avocados",
+      "description": "Creamy Hass avocados, perfect ripeness",
+      "category": "fresh_produce",
+      "subcategory": "fruits",
+      "basePrice": 1.79,
+      "wholesalePrice": 0.85,
+      "unitVolume": 0.3,
+      "shelfLife": 5,
+      "tier": 2,
+      "tags": ["fruit", "healthy", "premium"]
+    },
+    {
+      "productId": "prod_strawberry_pint",
+      "productName": "Strawberries (1 pint)",
+      "description": "Sweet, fresh strawberries",
+      "category": "fresh_produce",
+      "subcategory": "berries",
+      "basePrice": 4.99,
+      "wholesalePrice": 2.40,
+      "unitVolume": 0.4,
+      "shelfLife": 5,
+      "tier": 2,
+      "tags": ["fruit", "berry", "seasonal"]
+    },
+    {
+      "productId": "prod_carrot_bunch",
+      "productName": "Carrot Bunch",
+      "description": "Fresh carrots with green tops",
+      "category": "fresh_produce",
+      "subcategory": "vegetables",
+      "basePrice": 2.29,
+      "wholesalePrice": 1.05,
+      "unitVolume": 0.6,
+      "shelfLife": 21,
+      "tier": 1,
+      "tags": ["vegetable", "healthy", "snack"]
+    }
+  ],
+  "categorySettings": {
+    "requiresRefrigeration": false,
+    "displayTemperature": "cool",
+    "restockFrequency": "daily",
+    "wasteRate": 0.05,
+    "peakDemandHours": [8, 9, 17, 18],
+    "seasonalMultipliers": {
+      "spring": 1.2,
+      "summer": 1.3,
+      "fall": 1.0,
+      "winter": 0.9
+    }
+  }
+}
