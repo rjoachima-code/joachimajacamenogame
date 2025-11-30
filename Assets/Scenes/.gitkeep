@@ -20,14 +20,23 @@
 #   - QuitButton with red background and "Quit" text
 # - EventSystem with StandaloneInputModule
 #
+# IMPORTANT: Button Functionality
+# -------------------------------
+# Buttons are configured to work with the MainMenuUI.cs script which
+# registers click handlers programmatically via AddListener() in Start().
+# This is the recommended Unity pattern for UI button handling.
+#
 # Final Setup in Unity Editor:
 # ----------------------------
 # 1. Open the project in Unity 2022+
 # 2. Open the MainMenu scene
 # 3. Add GameManager script to the "Managers" GameObject
 # 4. Add AudioManager script to the "Managers" GameObject
-# 5. Add MainMenuUI script to a new "MainMenuManager" GameObject
-# 6. Assign startGameButton and quitButton references in MainMenuUI
-# 7. Add scene to Build Settings (File > Build Settings)
+# 5. Create a new "MainMenuManager" GameObject
+# 6. Add MainMenuUI script component to MainMenuManager
+# 7. CRITICAL: Drag StartButton and QuitButton to the MainMenuUI fields
+#    - startGameButton -> StartButton
+#    - quitButton -> QuitButton
+# 8. Add scene to Build Settings (File > Build Settings)
 #    - MainMenu as scene index 0
 #    - MainGame as scene index 1
