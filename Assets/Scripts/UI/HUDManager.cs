@@ -34,16 +34,29 @@ public class HUDManager : MonoBehaviour
             PlayerStats.Instance.onMoneyChanged.AddListener(UpdateMoney);
         }
 
-        if (TimeManager.Instance != null)
+        if (TimeSystem.Instance != null)
         {
-            TimeManager.Instance.onHourPassed.AddListener(UpdateClock);
+            TimeSystem.Instance.OnTimeTick += OnTimeTick;
         }
 
         // Initial updates
         UpdateHunger(PlayerStats.Instance?.GetHunger() ?? 100f);
         UpdateEnergy(PlayerStats.Instance?.GetEnergy() ?? 100f);
         UpdateMoney(PlayerStats.Instance?.GetMoney() ?? 100);
-        UpdateClock(TimeManager.Instance?.GetCurrentHour() ?? 8);
+        UpdateClock(TimeSystem.Instance?.Hour ?? 8, TimeSystem.Instance?.Minute ?? 0);
+    }
+
+    private void OnDestroy()
+    {
+        if (TimeSystem.Instance != null)
+        {
+            TimeSystem.Instance.OnTimeTick -= OnTimeTick;
+        }
+    }
+
+    private void OnTimeTick(int hour, int minute)
+    {
+        UpdateClock(hour, minute);
     }
 
     private void UpdateHunger(float hunger)
@@ -70,14 +83,14 @@ public class HUDManager : MonoBehaviour
         }
     }
 
-    private void UpdateClock(int hour)
+    private void UpdateClock(int hour, int minute)
     {
         if (clockText != null)
         {
             string period = hour >= 12 ? "PM" : "AM";
             int displayHour = hour > 12 ? hour - 12 : hour;
             if (displayHour == 0) displayHour = 12;
-            clockText.text = $"{displayHour}:00 {period}";
+            clockText.text = $"{displayHour}:{minute:D2} {period}";
         }
     }
 }
